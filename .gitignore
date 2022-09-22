@@ -1,0 +1,16 @@
+#Compiled class file
+*.class
+
+#IDEA
+.idea/
+
+#Compiled
+target/
+out/
+docs/
+build/
+
+# Default ignored files
+/shelf/
+/workspace.xml
+*.iml

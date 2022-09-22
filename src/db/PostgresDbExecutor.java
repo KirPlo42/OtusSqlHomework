@@ -18,10 +18,6 @@ public class PostgresDbExecutor implements IDbExecutor{
 
         String url = String.format("%s/%s", props.get("url"), props.get("db_name"));
 
-        Connection connection = null;
-        Statement statement = null;
-
-
             if (connection == null){
                 connection = DriverManager.getConnection(url, props.get("username"), props.get("password"));
                 statement = connection.createStatement();
@@ -34,8 +30,6 @@ public class PostgresDbExecutor implements IDbExecutor{
             statement.execute(sqlRequest);
 
             return null;
-
-
     }
 
     @Override
